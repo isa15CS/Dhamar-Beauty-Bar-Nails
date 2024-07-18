@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhamar Beauty Bar & Nails</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #f7eaea;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #d99aa4;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .hero-text h1 {
+            color: #d99aa4;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #d99aa4;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buttons a:hover {
+            background-color: #bf7b86;
+        }
+        section {
+            display: none;
+            padding: 40px 0;
+        }
+        .contact-info, .services-list, .about-text, .location-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .service-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .service-images img {
+            width: calc(33.33% - 10px); 
+            border-radius: 10px;
+        }
+    </style> 
+</head>
+<body>
+    <header class="container">
+        <h1>Dhamar Beauty Bar & Nails</h1>
+        <nav>
+            <a href="#" onclick="showSection('inicio')">Inicio</a>
+            <a href="#" onclick="showSection('conoceme')">Conóceme</a>
+            <a href="#" onclick="showSection('servicios')">Servicios</a>
+            <a href="#" onclick="showSection('contacto')">Contacto</a>
+            <a href="#" onclick="showSection('ubicacion')">Ubicación</a>
+        </nav>
+    </header>
+    <div class="container hero" id="inicio">
+        <div class="hero-text">
+            <h1>Arte en tus manos</h1>
+            <p>En Dhamar Beauty Bar & Nail, luce unas uñas increíbles, mientras disfrutas de un momento único de relajación.</p>
+            <div class="buttons">
+                <a href="#" onclick="showSection('contacto')">Contáctame</a>
+            </div>
+            <p>Contacto: 5619874504</p>
+        </div>
+        <img src="dhamar.jpg" alt="Nails & MakeUp">
+    </div>
+    <section id="conoceme" class="container about-text">
+        <h2>Conóceme</h2>
+        <p>Mi nombre es Dhamar y soy una Licenciada en administración de empresas, que le apasiona el mundo de la belleza y le gusta emprender en nuevas áreas. Cuento con cursos básicos y avanzados de uñas para poder ofrecerte un servicio de calidad. Constantemente me estoy actualizando para estar al día con nuevas técnicas, diseños y productos. Además, utilizo productos originales y de gama alta para que tengas la seguridad de que tendrás un trabajo garantizado y duradero.</p>
+    </section>
+    <section id="servicios" class="container services-list">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Aplicación nueva (tip, escultural, polygel, baño de gel)</li>
+            <li>Retoque</li>
+            <li>Retiro del producto</li>
+            <li>Retiro y aplicación nueva</li>
+            <li>Manicura</li>
+            <li>Maquillaje social</li>
+            <li>Maquillaje waterproof</li>
+            <li>Maquillaje luxury</li>
+            <li>Pruebas de maquillaje</li>
+        </ul>
+        <div class="service-images">
+            <img src="uñas moradas.jpg" alt="Uñas moradas">
+            <img src="uñas kirby.jpg" alt="Uñas Kirby">
+            <img src="uñas gel.jpg" alt="Uñas arcoiris">
+        </div>
+        <div class="service-images">
+            <img src="uñas helado.jpg" alt="Uñas helado">
+            <img src="uñas blancas.jpg" alt="Uñas blancas">
+            <img src="uñas blanco.jpg" alt="Uñas blanco">
+        </div>
+        <div class="service-images">
+            <img src="uñas diamante.jpg" alt="Uñas diamante">
+            <img src="uñas flores.jpg" alt="Uñas flores">
+            <img src="uñas arcoiris.jpg" alt="Uñas gel">
+        </div>
+        <div class="service-images">
+            <img src="uñas barbie.jpg" alt="Uñas Barbie">
+            <img src="uñas aqua.jpg" alt="Uñas Aqua">
+            <img src="uñas almendra.jpg" alt="Uñas almendra">
+        </div>
+    </section>
+    <section id="contacto" class="container contact-info">
+        <h2>Contacto</h2>
+        <p>Teléfono: 5619874504</p>
+        <p>Correo electrónico: workdhamar20@hotmail.com</p>
+        <p>Facebook: <a href="https://www.facebook.com/dhaamar.contreraas">Dhamar Contreraas</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/dhamar_conts/">@dhamar_conts</a></p>
+    </section>
+    <section id="ubicacion" class="container location-info">
+        <h2>Ubicación</h2>
+        <p>Maps: <a href="https://www.google.com.mx/maps/place/Av+Hacienda+del+Jard%C3%ADn+101,+Hacienda+del+Jard%C3%ADn,+54980+Santiago+Teyahualco,+M%C3%A9x./@19.6590798,-99.1403155,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1f451b147b26b:0x4e02ca33b4fbd113!8m2!3d19.6590748!4d-99.1377406!16s%2Fg%2F11c4yzgbtn?entry=ttu">Av Hacienda del Jardín 101, Hacienda del Jardín, 54980 Santiago Teyahualco, Méx.</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Dhamar Beauty Bar & Nails. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            
+            const sections = document.querySelectorAll('section, .hero');
+            sections.forEach(section => section.style.display = 'none');
+            
+        
+            const sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'block';
+        }
+        
+        
+        showSection('inicio');
+    </script>
+</body>
+</html>
